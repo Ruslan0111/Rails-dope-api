@@ -1,4 +1,6 @@
 class Api::V1::ProductsController < ApplicationController
+  before_action :authentication
+
   def index
     products = Product.all
     render json: products, status: :ok
@@ -38,7 +40,11 @@ class Api::V1::ProductsController < ApplicationController
         :brand,
         :price,
         :description
-    ])
+      ])
+    end
+
+    def test
+      puts 'TESTESTESTEST!!!!____!!___!__!_!_!__999'
     end
 
 end

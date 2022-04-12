@@ -6,6 +6,8 @@ ruby "3.1.1"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 
+gem "jwt"
+
 # Use mysql as the database for Active Record
 gem "mysql2", "~> 0.5"
 
